@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{{url_for('static', filename='index.css')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <table>
+            {%for x in range(0,num)%}
+                <tr>
+                    {%for i in range(num2)%}
+                    <td class="box1" style="background-color: {{str1}};"></td>
+                    <td class="box2" style="background-color: {{str2}};"></td>
+                    {% endfor %}
+                </tr>
+                <tr>
+                    {%for i in range(num2)%}
+                    <td class="box2" style="background-color: {{str2}};"></td>
+                    <td class="box1" style="background-color: {{str1}};"></td>
+                    {% endfor %}
+                </tr>
+             
+            {% endfor %}
+            </table>
+        
+        
+        
+        
+    </div>
+</body>
+</html>
