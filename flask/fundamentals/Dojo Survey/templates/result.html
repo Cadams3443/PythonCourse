@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey Index</title>
+</head>
+<body>
+    <div class="container">
+    <h1>Submitted Info</h1>
+
+        <table class="table " style="width: 500px; text-decoration: none; ">
+            <tr>
+                <td>Name</td>
+                <td>{{session['new_result']["name_entry"]}}</td>
+            </tr>
+            <tr>
+                <td>Dojo Location</td>
+                <td> {{session['new_result']["dojolocal"]}}</td>
+            </tr>
+            <tr>
+                <td>Favorite Language</td>
+                <td>{{session['new_result']["favlang"]}}</td>
+            </tr>
+            <tr>
+                <td>Comment (Optional)</td>
+                <td>{{session['new_result']["comment_entry"]}}</td>
+            </tr>
+            <tr>
+                <td>Are You a Robot</td>
+                <td> {{session['new_result']["not_robot"]}}</td>
+            </tr>
+            <tr>
+                <td>I have to say</td>
+                <td> {{session['new_result']["fun"]}}</td>
+            </tr>
+        </table>
+        
+        <a href="/" class="btn btn-primary">go back</a>
+        
+    </div>
+    </body>
+</html>
