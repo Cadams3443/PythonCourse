@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+}
+
+body{
+    background-color:#323030;
+}
+#ninja_form{
+
+    background-color: cornflowerblue !important;
+    padding: 10px;
+
+}
+
+
+
+.fullcolor{
+    background-color: cornflowerblue !important;
+}
+
+.divwidth{
+    width: 500px;
+    margin-top: 10px;
+}
+
+#dojo_id{
+    width: 100px;
+}
+
+#createbtn{
+    margin-top: 10px;
+}

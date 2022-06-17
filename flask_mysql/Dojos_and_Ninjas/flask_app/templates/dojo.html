@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static', filename='dojo.css')}}">
+    <title>Dojos</title>
+</head>
+<body>
+    <div class="d-flex container mt-4">
+            <form class= "p-5 bg-opacity-50" action="/add/dojo" method = 'POST' id="dojoform">
+                <h1>New Dojo</h1>
+                <div>
+                <label class="control-label fs-4" for="name">Name:</label>
+                <input class=" ms-4" type="text" name="name" id="name">
+            </div>
+            <button class=" btn btn-dark mt-3 mb-4 " type="submit" id="submitbtn">Create</button>
+                <div>
+                </div>
+                <div>
+                <a class= "text-decoration-none text-dark border border-dark p-2" href="/add/ninja">Add New Ninja</a>
+                </div>
+            </form>
+        <div class=" p-5 w-50" id="allDojos">
+            <h1>All Dojos</h1>
+            {% for dojo in all_dojos%}
+               <a class= "text-decoration-none text-dark" id="dojolist"
+               href="/dojo/{{dojo.id}}"><h3>{{dojo.name}}</h3></a>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

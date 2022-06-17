@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+}
+
+body{
+    background-color:#323030;
+}
+
+
+#dojoform{
+    background-color: cornflowerblue;
+}
+
+#dojoform a{
+    margin-top: 5px;
+    font-size: 25px;
+    color: blue;
+}
+
+#submitbtn{
+    width: 125px;
+    height: 50px;
+}
+
+#allDojos{
+    background-color: cornflowerblue;
+}
+
+#dojolist h3:hover{
+    color: blue;
+}
+
+.halfcolor{
+    background-color: rgba(229, 235, 246, 0.581) !important;
+}
+
+.createbtn{
+    border: none;
+    background-color: white !important;
+}
